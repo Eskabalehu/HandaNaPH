@@ -1,11 +1,14 @@
 import { HashRouter } from 'react-router';
 import AppRoutes from './routes/AppRoutes';
+import SettingsProvider from './context/SettingsContext';
 
 function App() {
   return (
-    <HashRouter>
-      <AppRoutes />
-    </HashRouter>
+    <SettingsProvider>
+      <HashRouter>
+        <AppRoutes />
+      </HashRouter>
+    </SettingsProvider>
   );
 }
 

@@ -1,13 +1,39 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>handanaph</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <meta name="theme-color" content="#f8fafc" />
+
+  <script>
+    (() => {
+      try {
+        const stored = localStorage.getItem('handanaph-settings');
+
+        if (!stored) return;
+
+        const settings = JSON.parse(stored);
+        const theme = settings?.theme;
+
+        if (theme === 'dark' || theme === 'hc') {
+          document.documentElement.setAttribute('data-theme', theme);
+        }
+      } catch {
+        // Keep the default theme when stored settings are unavailable.
+      }
+    })();
+  </script>
+
+  <title>HandaNaPH — Know. Prepare. Respond.</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
