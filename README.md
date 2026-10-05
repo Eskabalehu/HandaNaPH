@@ -1,16 +1,103 @@
-# React + Vite
+# 🇵🇭 HandaNaPH
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Know. Prepare. Respond.**
 
-Currently, two official plugins are available:
+HandaNaPH is a free, Filipino-focused emergency and disaster preparedness learning web app designed to help people understand what to do before, during, and after common emergencies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The project focuses on clear visual guides, interactive learning, practical preparedness tools, and credible emergency information.
 
-## React Compiler
+> **Educational use only. HandaNaPH does not replace formal first-aid training or professional emergency or medical assistance.**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Mission
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+HandaNaPH aims to make emergency preparedness easier to understand for people in the Philippines, including children, teens, adults, seniors, caregivers, parents, teachers, and low-bandwidth users.
+
+The system is designed around:
+
+**Learn → Practice → Prepare → Respond**
+
+---
+
+## Core Features
+
+- Emergency Mode for fast, simplified emergency guidance
+- Emergency hotline and resource directory
+- Searchable emergency and disaster learning library
+- Visual step-by-step guides
+- Credible-source educational videos
+- Interactive scenarios
+- Topic-based quizzes
+- Go-bag and preparedness checklists
+- Family emergency planning tools
+- Filipino / English language support
+- Accessibility features
+- Offline-first Progressive Web App (PWA)
+- HandaKids and senior-friendly experiences
+
+---
+
+## Target Users
+
+HandaNaPH is designed for:
+
+- Children and young learners
+- Students and adults
+- Seniors
+- Parents and teachers
+- PWDs and caregivers
+- People using low-end or low-bandwidth devices
+
+---
+
+## Design Direction
+
+HandaNaPH uses a modern Filipino visual identity inspired by the project's Philippine focus.
+
+### Color System
+
+- **Blue** — Learning and information
+- **Red** — Emergency and urgent actions
+- **Amber / Yellow** — Preparation and caution
+- **White / Neutral** — Content and readability
+
+The interface is designed to be:
+
+- Mobile-first
+- Clear
+- Calm
+- Accessible
+- Visual
+- Easy to understand under stress
+
+---
+
+## Technology Stack
+
+- React
+- Vite
+- JavaScript
+- React Router
+- Lucide React
+- Plain CSS
+- ESLint
+- Vercel
+
+---
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── home/
+│   ├── layout/
+│   └── ui/
+├── data/
+├── layouts/
+├── pages/
+├── routes/
+├── styles/
+├── App.jsx
+└── main.jsx
