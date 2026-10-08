@@ -94,3 +94,40 @@ a {
         font-size: 16px;
     }
 }
+
+.pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 20px);
+}
+
+/* Kids & Senior Mode touch target and typography adjustments */
+html.kids-mode, html.senior-mode {
+    font-size: 110%; /* Bump base font size */
+}
+
+html.kids-mode[data-text-size='A+'], html.senior-mode[data-text-size='A+'] {
+    font-size: 120%;
+}
+
+html.kids-mode[data-text-size='A++'], html.senior-mode[data-text-size='A++'] {
+    font-size: 135%;
+}
+
+html.kids-mode button,
+html.kids-mode a,
+html.kids-mode .touch-target {
+    min-height: 48px;
+}
+
+html.senior-mode button,
+html.senior-mode a,
+html.senior-mode .touch-target {
+    min-height: 54px;
+}
+
+/* Make text bolder in kids mode for readability */
+html.kids-mode {
+    font-weight: 500;
+}
+html.kids-mode h1, html.kids-mode h2, html.kids-mode h3 {
+    font-weight: 900;
+}

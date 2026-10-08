@@ -16,7 +16,7 @@ const footerLinks = [
         links: [
             { label: 'About HandaNaPH', to: '/about' },
             { label: 'Sources',         to: '/sources' },
-            { label: 'Contact',         to: '/contact' },
+            { label: 'Accessibility',   to: '/accessibility' },
         ],
     },
     {
@@ -24,7 +24,6 @@ const footerLinks = [
         links: [
             { label: 'Terms of Use', to: '/terms' },
             { label: 'Privacy',      to: '/privacy' },
-            { label: 'Disclaimer',   to: '/disclaimer' },
         ],
     },
 ];

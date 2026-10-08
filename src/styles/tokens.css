@@ -135,3 +135,21 @@ html[data-text-size='A+'] {
 html[data-text-size='A++'] {
     font-size: 125%;
 }
+
+/* Senior Mode High Contrast overrides */
+html.senior-mode {
+    --text-muted: var(--text);
+    --border: #94a3b8; /* darker border in light mode */
+}
+
+[data-theme='dark'] html.senior-mode,
+@media (prefers-color-scheme: dark) {
+    html.senior-mode:not([data-theme]) {
+        --border: #64748b; /* lighter border in dark mode */
+    }
+}
+
+/* Kids mode overrides */
+html.kids-mode {
+    --border: #cbd5e1; /* slightly stronger borders for visual hierarchy */
+}
