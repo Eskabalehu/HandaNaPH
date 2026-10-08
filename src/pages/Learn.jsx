@@ -24,6 +24,9 @@ export default function Learn() {
 
     // Filter guides based on search, category, and severity
     const filteredGuides = guides.filter(guide => {
+        // Safety First: Hide unverified medical content from the public UI
+        if (guide.lastReviewed === 'Unverified') return false;
+
         // Apply search
         let matchesSearch = true;
         if (searchQuery.trim()) {

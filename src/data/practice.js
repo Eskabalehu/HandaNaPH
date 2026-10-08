@@ -79,6 +79,7 @@ export const practiceItems = [
         title: 'First Aid Basics Quiz',
         description: 'Test your knowledge of basic first aid',
         type: 'quiz',
+        status: 'unverified',
         difficulty: 'intermediate',
         estimatedTime: '8 min',
         icon: 'Package',

@@ -11,6 +11,9 @@ export default function Practice() {
 
     // Filter items
     const filteredItems = practiceItems.filter((item) => {
+        // Safety First: Hide unverified medical content from the public UI
+        if (item.status === 'unverified') return false;
+
         const matchesType = selectedType === 'all' || item.type === selectedType;
         const matchesDifficulty =
             selectedDifficulty === 'all' || item.difficulty === selectedDifficulty;
