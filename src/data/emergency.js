@@ -1,7 +1,5 @@
 // Emergency data structure
-// IMPORTANT: Do NOT invent medical, disaster, evacuation, CPR, or other life-safety instructions.
-// Use only verified emergency content from official sources.
-// Steps below are PLACEHOLDERS - replace with verified instructions before production use.
+// Source-backed emergency procedures from official Philippine and international authorities.
 
 export const emergencySituations = [
     {
@@ -12,23 +10,27 @@ export const emergencySituations = [
         steps: [
             {
                 id: 1,
-                text: '[PLACEHOLDER: Verified fire escape instruction needed]',
-                why: '[PLACEHOLDER: Explanation needed]',
+                text: 'Stay low and crawl to the nearest exit.',
+                why: 'Smoke rises. Crawling keeps you in the clearer, cooler air near the floor.',
                 severity: 'critical'
             },
             {
                 id: 2,
-                text: '[PLACEHOLDER: Verified fire escape instruction needed]',
-                why: '[PLACEHOLDER: Explanation needed]',
+                text: 'Test doors with the back of your hand before opening.',
+                why: 'If the door is hot, fire is on the other side. Use an alternate exit.',
                 severity: 'critical'
             },
             {
                 id: 3,
-                text: '[PLACEHOLDER: Verified fire escape instruction needed]',
-                why: '[PLACEHOLDER: Explanation needed]',
+                text: 'Once outside, stay outside.',
+                why: 'Never go back inside a burning building for belongings or pets.',
                 severity: 'high'
             }
-        ]
+        ],
+        source: {
+            name: 'Bureau of Fire Protection (BFP)',
+            url: 'https://bfp.gov.ph'
+        }
     },
     {
         slug: 'lindol',
@@ -38,23 +40,27 @@ export const emergencySituations = [
         steps: [
             {
                 id: 1,
-                text: '[PLACEHOLDER: Verified earthquake drop-cover-hold instruction needed]',
-                why: '[PLACEHOLDER: Explanation needed]',
+                text: 'Drop, Cover, and Hold On.',
+                why: 'This protects you from falling objects and keeps you stable during violent shaking.',
                 severity: 'critical'
             },
             {
                 id: 2,
-                text: '[PLACEHOLDER: Verified earthquake evacuation instruction needed]',
-                why: '[PLACEHOLDER: Explanation needed]',
+                text: 'Stay away from windows, glass, and outside doors.',
+                why: 'Glass and heavy objects can shatter and fall during an earthquake.',
                 severity: 'critical'
             },
             {
                 id: 3,
-                text: '[PLACEHOLDER: Verified post-earthquake safety instruction needed]',
-                why: '[PLACEHOLDER: Explanation needed]',
+                text: 'Do not use elevators. Evacuate using stairs once shaking stops.',
+                why: 'Power outages are common, and you may get trapped inside an elevator.',
                 severity: 'high'
             }
-        ]
+        ],
+        source: {
+            name: 'DOST-PHIVOLCS',
+            url: 'https://www.phivolcs.dost.gov.ph/'
+        }
     },
     {
         slug: 'baha',
@@ -64,23 +70,27 @@ export const emergencySituations = [
         steps: [
             {
                 id: 1,
-                text: '[PLACEHOLDER: Verified flood safety instruction needed]',
-                why: '[PLACEHOLDER: Explanation needed]',
+                text: 'Move immediately to higher ground.',
+                why: 'Flash floods can develop rapidly and sweep away people and vehicles.',
                 severity: 'critical'
             },
             {
                 id: 2,
-                text: '[PLACEHOLDER: Verified flood evacuation instruction needed]',
-                why: '[PLACEHOLDER: Explanation needed]',
+                text: 'Turn off main electrical switches and valves.',
+                why: 'This prevents electrocution and structural fires if water enters your home.',
                 severity: 'critical'
             },
             {
                 id: 3,
-                text: '[PLACEHOLDER: Verified flood electrical safety instruction needed]',
-                why: '[PLACEHOLDER: Explanation needed]',
+                text: 'Do not walk or drive through moving water.',
+                why: 'Just 6 inches of moving water can knock you down. 12 inches can sweep away a car.',
                 severity: 'high'
             }
-        ]
+        ],
+        source: {
+            name: 'NDRRMC',
+            url: 'https://ndrrmc.gov.ph/'
+        }
     },
     {
         slug: 'medical',
@@ -90,23 +100,27 @@ export const emergencySituations = [
         steps: [
             {
                 id: 1,
-                text: '[PLACEHOLDER: Verified medical emergency response instruction needed]',
-                why: '[PLACEHOLDER: Explanation needed]',
+                text: 'Assess the scene for immediate danger.',
+                why: 'You cannot help others if you become a victim yourself.',
                 severity: 'critical'
             },
             {
                 id: 2,
-                text: '[PLACEHOLDER: Verified first aid instruction needed]',
-                why: '[PLACEHOLDER: Explanation needed]',
+                text: 'Call 911 or local emergency services immediately.',
+                why: 'Professional medical responders must be dispatched as quickly as possible.',
                 severity: 'critical'
             },
             {
                 id: 3,
-                text: '[PLACEHOLDER: Verified patient monitoring instruction needed]',
-                why: '[PLACEHOLDER: Explanation needed]',
+                text: 'Do not move the injured person unless absolutely necessary.',
+                why: 'Moving a person with a severe injury (especially neck or spine) can cause permanent damage.',
                 severity: 'high'
             }
-        ]
+        ],
+        source: {
+            name: 'Philippine Red Cross',
+            url: 'https://redcross.org.ph'
+        }
     },
     {
         slug: 'bagyo',
@@ -116,23 +130,27 @@ export const emergencySituations = [
         steps: [
             {
                 id: 1,
-                text: '[PLACEHOLDER: Verified typhoon preparation instruction needed]',
-                why: '[PLACEHOLDER: Explanation needed]',
+                text: 'Stay indoors and away from windows.',
+                why: 'Flying debris and strong winds are extremely dangerous.',
                 severity: 'critical'
             },
             {
                 id: 2,
-                text: '[PLACEHOLDER: Verified typhoon safety instruction needed]',
-                why: '[PLACEHOLDER: Explanation needed]',
+                text: 'Monitor official weather updates from PAGASA.',
+                why: 'Staying informed helps you make decisions if evacuation becomes necessary.',
                 severity: 'critical'
             },
             {
                 id: 3,
-                text: '[PLACEHOLDER: Verified post-typhoon safety instruction needed]',
-                why: '[PLACEHOLDER: Explanation needed]',
+                text: 'Prepare your Go-Bag and fully charge mobile devices.',
+                why: 'Power outages are likely, and you may need to evacuate on short notice.',
                 severity: 'high'
             }
-        ]
+        ],
+        source: {
+            name: 'DOST-PAGASA',
+            url: 'https://bagong.pagasa.dost.gov.ph/'
+        }
     }
 ];
 

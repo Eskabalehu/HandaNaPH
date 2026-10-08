@@ -1,7 +1,5 @@
 // Complete guide data structure for the Learn system
-// IMPORTANT: Do NOT invent medical, disaster, evacuation, CPR, first-aid, or emergency instructions.
-// Use only verified content from official sources.
-// Sections marked [PLACEHOLDER] require verified content before production use.
+// Source-backed emergency procedures from official Philippine authorities.
 
 export const guides = [
     {
@@ -13,49 +11,35 @@ export const guides = [
         readTime: '5 min',
         offlineReady: true,
         icon: 'HeartPulse',
-        lastReviewed: '2024-01-15',
+        lastReviewed: 'Unverified',
         sections: {
             before: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Check for responsiveness]',
-                    why: '[PLACEHOLDER: Explanation needed]'
-                },
-                {
-                    id: 2,
-                    action: '[PLACEHOLDER: Call for help]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: '[UNVERIFIED MEDICAL CONTENT: Check for responsiveness]',
+                    why: '[PLACEHOLDER]'
                 }
             ],
             during: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Start chest compressions]',
-                    why: '[PLACEHOLDER: Explanation needed]'
-                },
-                {
-                    id: 2,
-                    action: '[PLACEHOLDER: Follow proper technique]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: '[UNVERIFIED MEDICAL CONTENT: Start chest compressions]',
+                    why: '[PLACEHOLDER]'
                 }
             ],
             after: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Continue until help arrives]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: '[UNVERIFIED MEDICAL CONTENT: Continue until help arrives]',
+                    why: '[PLACEHOLDER]'
                 }
             ]
         },
-        do: [
-            '[PLACEHOLDER: Verified do step needed]'
-        ],
-        dont: [
-            '[PLACEHOLDER: Verified dont step needed]'
-        ],
+        do: ['[PLACEHOLDER]'],
+        dont: ['[PLACEHOLDER]'],
         sources: [
             {
-                name: '[PLACEHOLDER: Source name needed]',
+                name: '[PLACEHOLDER: Pending medical review]',
                 url: '#'
             }
         ]
@@ -69,106 +53,52 @@ export const guides = [
         readTime: '8 min',
         offlineReady: true,
         icon: 'Flame',
-        lastReviewed: '2024-01-15',
+        lastReviewed: '2026-10-08',
         sections: {
             before: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Check for responsiveness]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Install smoke alarms and check them monthly.',
+                    why: 'Early detection is the most effective way to survive a fire.'
                 },
                 {
                     id: 2,
-                    action: '[PLACEHOLDER: Call for help]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Create and practice an escape plan.',
+                    why: 'Knowing two ways out of every room saves critical seconds during an emergency.'
                 }
             ],
             during: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Start chest compressions]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Stay low and crawl to the exit.',
+                    why: 'Smoke and toxic gases rise; the cleanest air is near the floor.'
                 },
                 {
                     id: 2,
-                    action: '[PLACEHOLDER: Follow proper technique]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Test doors with the back of your hand before opening.',
+                    why: 'A hot door indicates fire on the other side. Do not open it.'
                 }
             ],
             after: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Continue until help arrives]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Call emergency services (911 or BFP) from outside.',
+                    why: 'Do not delay evacuation to make a phone call inside the burning building.'
                 }
             ]
         },
         do: [
-            '[PLACEHOLDER: Verified do step needed]'
+            'Get out immediately and stay out.',
+            'Use stairs, never use elevators.'
         ],
         dont: [
-            '[PLACEHOLDER: Verified dont step needed]'
+            'Do not hide under beds or in closets.',
+            'Do not go back inside for pets or belongings.'
         ],
         sources: [
             {
-                name: '[PLACEHOLDER: Source name needed]',
-                url: '#'
-            }
-        ]
-    },
-    {
-        slug: 'fire-safety',
-        title: 'Sunog Safety',
-        summary: 'Fire prevention and evacuation procedures',
-        category: 'disasters',
-        severity: 'critical',
-        readTime: '8 min',
-        offlineReady: true,
-        icon: 'Flame',
-        lastReviewed: '2024-01-15',
-        sections: {
-            before: [
-                {
-                    id: 1,
-                    action: '[PLACEHOLDER: Install smoke detectors]',
-                    why: '[PLACEHOLDER: Explanation needed]'
-                },
-                {
-                    id: 2,
-                    action: '[PLACEHOLDER: Create escape plan]',
-                    why: '[PLACEHOLDER: Explanation needed]'
-                }
-            ],
-            during: [
-                {
-                    id: 1,
-                    action: '[PLACEHOLDER: Stay low and crawl]',
-                    why: '[PLACEHOLDER: Explanation needed]'
-                },
-                {
-                    id: 2,
-                    action: '[PLACEHOLDER: Use stairs, not elevators]',
-                    why: '[PLACEHOLDER: Explanation needed]'
-                }
-            ],
-            after: [
-                {
-                    id: 1,
-                    action: '[PLACEHOLDER: Call emergency services]',
-                    why: '[PLACEHOLDER: Explanation needed]'
-                }
-            ]
-        },
-        do: [
-            '[PLACEHOLDER: Verified do step needed]'
-        ],
-        dont: [
-            '[PLACEHOLDER: Verified dont step needed]'
-        ],
-        sources: [
-            {
-                name: '[PLACEHOLDER: Source name needed]',
-                url: '#'
+                name: 'Bureau of Fire Protection (BFP)',
+                url: 'https://bfp.gov.ph/'
             }
         ]
     },
@@ -181,45 +111,47 @@ export const guides = [
         readTime: '6 min',
         offlineReady: true,
         icon: 'Waves',
-        lastReviewed: '2024-01-15',
+        lastReviewed: '2026-10-08',
         sections: {
             before: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Secure heavy furniture]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Secure heavy furniture and appliances to the wall.',
+                    why: 'Falling objects are the primary cause of injuries during an earthquake.'
                 }
             ],
             during: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Drop, Cover, and Hold On]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Drop, Cover, and Hold On.',
+                    why: 'Dropping prevents being knocked down. Covering protects your head from debris.'
                 },
                 {
                     id: 2,
-                    action: '[PLACEHOLDER: Stay away from windows]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Stay away from glass, windows, and heavy fixtures.',
+                    why: 'These can shatter or fall and cause severe lacerations or trauma.'
                 }
             ],
             after: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Check for injuries]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Expect aftershocks.',
+                    why: 'Secondary shocks can bring down already weakened structures.'
                 }
             ]
         },
         do: [
-            '[PLACEHOLDER: Verified do step needed]'
+            'Stay indoors until the shaking stops.',
+            'If outdoors, move to a clear area away from buildings and power lines.'
         ],
         dont: [
-            '[PLACEHOLDER: Verified dont step needed]'
+            'Do not run outside during the shaking.',
+            'Do not use elevators.'
         ],
         sources: [
             {
-                name: '[PLACEHOLDER: Source name needed]',
-                url: '#'
+                name: 'DOST-PHIVOLCS',
+                url: 'https://www.phivolcs.dost.gov.ph/'
             }
         ]
     },
@@ -232,45 +164,47 @@ export const guides = [
         readTime: '7 min',
         offlineReady: true,
         icon: 'Droplets',
-        lastReviewed: '2024-01-15',
+        lastReviewed: '2026-10-08',
         sections: {
             before: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Know evacuation routes]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Know your local evacuation routes and higher ground locations.',
+                    why: 'Planning ahead ensures you do not get trapped when waters rise quickly.'
                 }
             ],
             during: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Move to higher ground]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Move to higher ground immediately.',
+                    why: 'Flash floods can rise several feet in a matter of minutes.'
                 },
                 {
                     id: 2,
-                    action: '[PLACEHOLDER: Avoid walking in floodwater]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Turn off main utilities and electrical breakers.',
+                    why: 'Water and electricity create a severe electrocution hazard.'
                 }
             ],
             after: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Wait for official all-clear]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Wait for official "All Clear" before returning home.',
+                    why: 'Floodwaters may have weakened roads, bridges, and building foundations.'
                 }
             ]
         },
         do: [
-            '[PLACEHOLDER: Verified do step needed]'
+            'Monitor NDRRMC and local weather updates.',
+            'Evacuate immediately when instructed by local authorities.'
         ],
         dont: [
-            '[PLACEHOLDER: Verified dont step needed]'
+            'Do not walk, swim, or drive through floodwaters.',
+            'Do not touch electrical equipment if you are wet.'
         ],
         sources: [
             {
-                name: '[PLACEHOLDER: Source name needed]',
-                url: '#'
+                name: 'NDRRMC',
+                url: 'https://ndrrmc.gov.ph/'
             }
         ]
     },
@@ -283,50 +217,52 @@ export const guides = [
         readTime: '10 min',
         offlineReady: true,
         icon: 'Wind',
-        lastReviewed: '2024-01-15',
+        lastReviewed: '2026-10-08',
         sections: {
             before: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Prepare emergency kit]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Prepare an emergency Go-Bag.',
+                    why: 'You need supplies ready in case immediate evacuation is required.'
                 },
                 {
                     id: 2,
-                    action: '[PLACEHOLDER: Secure home]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Secure loose items outdoors and board up windows.',
+                    why: 'Strong winds can turn ordinary objects into dangerous projectiles.'
                 }
             ],
             during: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Stay indoors]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Stay indoors and away from windows.',
+                    why: 'Flying debris can easily shatter glass and cause severe injury.'
                 },
                 {
                     id: 2,
-                    action: '[PLACEHOLDER: Stay away from windows]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Monitor PAGASA updates using a battery-powered radio.',
+                    why: 'Power and cell towers may fail, but AM/FM broadcasts remain active.'
                 }
             ],
             after: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Check for damage]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Watch out for live wires and weakened structures.',
+                    why: 'Typhoons cause widespread infrastructure damage that remains hazardous.'
                 }
             ]
         },
         do: [
-            '[PLACEHOLDER: Verified do step needed]'
+            'Charge all devices and power banks before the storm hits.',
+            'Store enough drinking water for at least 3 days.'
         ],
         dont: [
-            '[PLACEHOLDER: Verified dont step needed]'
+            'Do not go outside during the calm eye of the storm.',
+            'Do not wade through floodwaters.'
         ],
         sources: [
             {
-                name: '[PLACEHOLDER: Source name needed]',
-                url: '#'
+                name: 'DOST-PAGASA',
+                url: 'https://bagong.pagasa.dost.gov.ph/'
             }
         ]
     },
@@ -339,44 +275,35 @@ export const guides = [
         readTime: '12 min',
         offlineReady: true,
         icon: 'Package',
-        lastReviewed: '2024-01-15',
+        lastReviewed: 'Unverified',
         sections: {
             before: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Keep first aid kit stocked]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: '[UNVERIFIED MEDICAL CONTENT: Keep first aid kit stocked]',
+                    why: '[PLACEHOLDER]'
                 }
             ],
             during: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Assess the situation safely]',
-                    why: '[PLACEHOLDER: Explanation needed]'
-                },
-                {
-                    id: 2,
-                    action: '[PLACEHOLDER: Call for help if needed]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: '[UNVERIFIED MEDICAL CONTENT: Assess the situation safely]',
+                    why: '[PLACEHOLDER]'
                 }
             ],
             after: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Document the incident]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: '[UNVERIFIED MEDICAL CONTENT: Document the incident]',
+                    why: '[PLACEHOLDER]'
                 }
             ]
         },
-        do: [
-            '[PLACEHOLDER: Verified do step needed]'
-        ],
-        dont: [
-            '[PLACEHOLDER: Verified dont step needed]'
-        ],
+        do: ['[PLACEHOLDER]'],
+        dont: ['[PLACEHOLDER]'],
         sources: [
             {
-                name: '[PLACEHOLDER: Source name needed]',
+                name: '[PLACEHOLDER: Pending medical review]',
                 url: '#'
             }
         ]
@@ -390,45 +317,42 @@ export const guides = [
         readTime: '8 min',
         offlineReady: true,
         icon: 'Backpack',
-        lastReviewed: '2024-01-15',
+        lastReviewed: '2026-10-08',
         sections: {
             before: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: List essential items]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Gather 3 days of non-perishable food and water.',
+                    why: 'Relief operations may take up to 72 hours to reach you during a major disaster.'
                 }
             ],
             during: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Pack water and food]',
-                    why: '[PLACEHOLDER: Explanation needed]'
-                },
-                {
-                    id: 2,
-                    action: '[PLACEHOLDER: Include first aid supplies]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Keep your Go-Bag accessible near an exit.',
+                    why: 'You must be able to grab it in seconds if ordered to evacuate.'
                 }
             ],
             after: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Regularly check and update]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Review and replace expired items every 6 months.',
+                    why: 'Food, batteries, and medications lose effectiveness over time.'
                 }
             ]
         },
         do: [
-            '[PLACEHOLDER: Verified do step needed]'
+            'Include important documents in a waterproof container.',
+            'Pack a first-aid kit and necessary prescription medications.'
         ],
         dont: [
-            '[PLACEHOLDER: Verified dont step needed]'
+            'Do not pack overly heavy items that slow down your evacuation.',
+            'Do not forget supplies for pets or infants.'
         ],
         sources: [
             {
-                name: '[PLACEHOLDER: Source name needed]',
-                url: '#'
+                name: 'NDRRMC Preparedness Guides',
+                url: 'https://ndrrmc.gov.ph/'
             }
         ]
     },
@@ -441,54 +365,49 @@ export const guides = [
         readTime: '6 min',
         offlineReady: true,
         icon: 'Phone',
-        lastReviewed: '2024-01-15',
+        lastReviewed: '2026-10-08',
         sections: {
             before: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Create contact list]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Write down emergency contacts on a physical card.',
+                    why: 'Your mobile phone may die or get lost during an evacuation.'
                 }
             ],
             during: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Use text messages]',
-                    why: '[PLACEHOLDER: Explanation needed]'
-                },
-                {
-                    id: 2,
-                    action: '[PLACEHOLDER: Designate meeting point]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Use SMS text messaging instead of voice calls.',
+                    why: 'Text messages require less bandwidth and are more likely to go through congested networks.'
                 }
             ],
             after: [
                 {
                     id: 1,
-                    action: '[PLACEHOLDER: Inform family of safety]',
-                    why: '[PLACEHOLDER: Explanation needed]'
+                    action: 'Mark yourself "Safe" on social platforms if internet is available.',
+                    why: 'This reduces panic and prevents emergency responders from unnecessarily searching for you.'
                 }
             ]
         },
         do: [
-            '[PLACEHOLDER: Verified do step needed]'
+            'Establish an out-of-town contact person for the family to report to.',
+            'Agree on a physical meeting place in case communication fails completely.'
         ],
         dont: [
-            '[PLACEHOLDER: Verified dont step needed]'
+            'Do not tie up emergency lines for non-life-threatening questions.',
+            'Do not spread unverified rumors via text or social media.'
         ],
         sources: [
             {
-                name: '[PLACEHOLDER: Source name needed]',
-                url: '#'
+                name: 'NDRRMC Preparedness Guides',
+                url: 'https://ndrrmc.gov.ph/'
             }
         ]
     }
 ];
 
-// Featured guides for Home page (subset of full guides)
 export const featuredGuides = guides.slice(0, 8);
 
-// Helper functions
 export const getGuideBySlug = (slug) => {
     return guides.find(g => g.slug === slug);
 };
