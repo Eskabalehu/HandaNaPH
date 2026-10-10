@@ -114,19 +114,21 @@ export default function Hotlines() {
                             </div>
                             
                             <div className="flex gap-2 mt-auto">
-                                <Button 
-                                    variant="call" 
-                                    icon={Phone} 
-                                    className="flex-1"
-                                    onClick={() => window.location.href = `tel:${hotline.number.replace(/[^0-9]/g, '')}`}
-                                >
-                                    Tawagan
-                                </Button>
+                                {hotline.source && (
+                                    <Button 
+                                        variant="secondary"
+                                        className="flex-1"
+                                        onClick={() => window.open(hotline.source, '_blank', 'noopener,noreferrer')}
+                                    >
+                                        Official Website
+                                    </Button>
+                                )}
                                 <Button 
                                     variant={copiedId === hotline.id ? 'primary' : 'secondary'}
                                     icon={copiedId === hotline.id ? CheckCircle2 : Copy}
                                     onClick={() => handleCopy(hotline.id, hotline.number)}
                                     aria-label="Copy number"
+                                    className={!hotline.source ? "flex-1" : ""}
                                 >
                                     {copiedId === hotline.id ? 'Copied' : 'Copy'}
                                 </Button>

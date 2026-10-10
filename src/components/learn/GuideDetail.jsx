@@ -54,6 +54,38 @@ export default function GuideDetail() {
         );
     }
 
+    // Safety First: Block direct navigation to unverified medical content
+    if (guide.lastReviewed === 'Unverified') {
+        return (
+            <div className="w-full max-w-[800px] mx-auto px-4 md:px-6 lg:px-8 py-12">
+                <div className="p-8 rounded-2xl bg-surface border border-border text-center">
+                    <AlertTriangle size={48} className="text-emergency mx-auto mb-4" aria-hidden="true" />
+                    <h1 className="text-2xl md:text-3xl font-bold text-text mb-4">
+                        Guide Not Found
+                    </h1>
+                    <p className="text-text-muted mb-6">
+                        The guide you're looking for doesn't exist or has been removed.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                        <Link
+                            to="/learn"
+                            className="min-h-[48px] px-6 py-3 rounded-xl bg-learn-solid text-on-solid font-bold transition-all [@media(hover:hover)_and_(pointer:fine)]:hover:brightness-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring"
+                        >
+                            Back to Learn
+                        </Link>
+                        <Link
+                            to="/emergency"
+                            className="min-h-[48px] px-6 py-3 rounded-xl bg-emergency-solid text-on-solid font-bold transition-all [@media(hover:hover)_and_(pointer:fine)]:hover:bg-emergency-strong focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring"
+                        >
+                            Emergency
+                        </Link>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
+
     // Find previous and next guides
     const currentIndex = guides.findIndex(g => g.slug === slug);
     const previousGuide = currentIndex > 0 ? guides[currentIndex - 1] : null;

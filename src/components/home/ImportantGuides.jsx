@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
 import GuideCard from '../learn/GuideCard';
-import { featuredGuides } from '../../data/guides';
+import { verifiedFeaturedGuides } from '../../data/guides';
 
 export default function ImportantGuides() {
     return (
@@ -17,7 +17,7 @@ export default function ImportantGuides() {
                 </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-                {featuredGuides.map((guide) => (
+                {verifiedFeaturedGuides.map((guide) => (
                     <GuideCard key={guide.slug} guide={guide} />
                 ))}
             </div>

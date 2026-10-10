@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Search } from 'lucide-react';
 import GuideCard from '../components/learn/GuideCard';
-import { guides } from '../data/guides';
+import { guides, verifiedFeaturedGuides } from '../data/guides';
 
 const categories = [
     { id: 'all', label: 'All' },
@@ -130,7 +130,7 @@ export default function Learn() {
                     Dapat Alamin ng Lahat
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-                    {guides.slice(0, 4).map((guide) => (
+                    {verifiedFeaturedGuides.map((guide) => (
                         <GuideCard key={guide.slug} guide={guide} />
                     ))}
                 </div>

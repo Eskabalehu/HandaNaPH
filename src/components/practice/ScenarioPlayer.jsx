@@ -121,6 +121,51 @@ export default function ScenarioPlayer() {
         );
     }
 
+    // Safety First: Block direct navigation to unverified medical content
+    if (practiceItem.status === 'unverified') {
+        return (
+            <div className="w-full max-w-[800px] mx-auto px-4 md:px-6 lg:px-8 py-12">
+                <div className="p-8 rounded-2xl bg-surface border border-border text-center">
+                    <AlertTriangle
+                        size={48}
+                        className="text-emergency mx-auto mb-4"
+                        aria-hidden="true"
+                    />
+                    <h1 className="text-2xl md:text-3xl font-bold text-text mb-4">
+                        Hindi Nahanap
+                    </h1>
+                    <p className="text-text-muted mb-6">
+                        Ang hinahanap mong practice scenario o quiz ay hindi available o tinanggal na.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                        <Link
+                            to="/practice"
+                            className="inline-flex items-center justify-center gap-2 min-h-[48px] px-6 py-3 rounded-xl bg-learn-solid text-on-solid font-bold transition-all [@media(hover:hover)_and_(pointer:fine)]:hover:brightness-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring"
+                        >
+                            <ArrowLeft size={18} aria-hidden="true" />
+                            Bumalik sa Practice
+                        </Link>
+                        <Link
+                            to="/"
+                            className="inline-flex items-center justify-center gap-2 min-h-[48px] px-6 py-3 rounded-xl bg-surface-2 text-text border border-border font-bold transition-all [@media(hover:hover)_and_(pointer:fine)]:hover:bg-border focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring"
+                        >
+                            <Home size={18} aria-hidden="true" />
+                            Home
+                        </Link>
+                        <Link
+                            to="/emergency"
+                            className="inline-flex items-center justify-center gap-2 min-h-[48px] px-6 py-3 rounded-xl bg-emergency-solid text-on-solid font-bold transition-all [@media(hover:hover)_and_(pointer:fine)]:hover:bg-emergency-strong focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring"
+                        >
+                            <ShieldAlert size={18} aria-hidden="true" />
+                            Emergency
+                        </Link>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
+
     const Icon = Icons[practiceItem.icon];
 
     // Results screen

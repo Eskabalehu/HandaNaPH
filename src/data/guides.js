@@ -406,7 +406,13 @@ export const guides = [
     }
 ];
 
+// Raw export — only used internally. Do NOT use in public-facing components.
 export const featuredGuides = guides.slice(0, 8);
+
+// Public-safe featured guides: excludes any unverified medical content.
+export const verifiedFeaturedGuides = guides
+    .filter(g => g.lastReviewed !== 'Unverified')
+    .slice(0, 4);
 
 export const getGuideBySlug = (slug) => {
     return guides.find(g => g.slug === slug);
