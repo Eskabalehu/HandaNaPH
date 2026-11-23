@@ -86,21 +86,5 @@ The interface is designed to be:
 
 ---
 
-## Project Structure
 
-Co-authored-by: MarkJhonMayor <mayormarkjhon@gmail.com>
-```text
-src/
-├── components/
-│   ├── home/
-│   ├── layout/
-│   └── ui/
-├── data/
-├── layouts/
-├── pages/
-├── routes/
-├── styles/
-├── App.jsx
-└── main.jsx
 
-Co-authored-by: nk-chiwa10 <nk-chiwa10@users.noreply.github.com>
