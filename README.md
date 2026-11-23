@@ -88,7 +88,7 @@ The interface is designed to be:
 
 ## Project Structure
 
-Co-authored-by: MarkJhonMayor <mayormarkjhon02@gmail.com>
+Co-authored-by: MarkJhonMayor <mayormarkjhon@gmail.com>
 ```text
 src/
 ├── components/
